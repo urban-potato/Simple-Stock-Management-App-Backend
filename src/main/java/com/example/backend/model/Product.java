@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id = -1;
     @Column(name = "brand")
     private String brand;
     @Column(name = "model")
@@ -21,9 +21,9 @@ public class Product {
     @Column(name = "description")
     private String description;
     @Column(name = "price")
-    private int price;
+    private int price = -1;
     @Column(name = "quantity")
-    private int quantity;
+    private int quantity = -1;
 
     public Product(String brand, String model, String description, int price, int quantity) {
         this.brand = brand;

@@ -75,7 +75,7 @@ public class ProductRestController {
             if (updatedProduct.getDescription() != null) {
                 product.setDescription(updatedProduct.getDescription());
             }
-            if (updatedProduct.getPrice() > 0) {
+            if (updatedProduct.getPrice() >= 0) {
                 product.setPrice(updatedProduct.getPrice());
             }
             if (updatedProduct.getQuantity() >= 0) {
